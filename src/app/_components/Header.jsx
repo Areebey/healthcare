@@ -1,4 +1,7 @@
+"use client"
+
 import { Button } from '@/components/ui/button'
+import { LoginLink, LogoutLink, useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -40,7 +43,8 @@ function Header() {
             })}
         </ul>
     </div>
-    <Button>Get Started</Button>
+    <LoginLink><Button>Get Started</Button></LoginLink>
+    
 </div>
 
   )
